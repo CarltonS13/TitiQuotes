@@ -13,7 +13,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { Pro } from '@ionic/pro';
+
 import { QuotesProvider } from '../providers/quotes/quotes';
+
+
+const IonicPro = Pro.init('e667d068', {
+  appVersion: "0.80"
+});
+
 
 @NgModule({
   declarations: [
@@ -45,3 +53,9 @@ import { QuotesProvider } from '../providers/quotes/quotes';
   ]
 })
 export class AppModule {}
+
+export class MyErrorHandler implements ErrorHandler {
+  handleError(err: any): void {
+    IonicPro.monitoring.handleNewError(err);
+  }
+}
