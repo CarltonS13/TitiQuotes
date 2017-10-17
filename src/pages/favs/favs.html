@@ -1,0 +1,19 @@
+<ion-header no-shadow no-border>
+  <ion-navbar transparent  >
+    <h2 class="ctitle">Archived Quotes</h2>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class = "acontent" padding>
+
+  <ion-list type="button" *ngFor="let quote of quotes; let i=index" (tap)="quoteClicked(i)" >
+<div class="aacard">
+    <ion-item class="acard"  *ngIf="i<limit">
+      <ion-avatar class="avatar" item-start> <img src="assets/img/thumbnail.jpg"> </ion-avatar>
+      <h2 >Quote {{i+1}}</h2>
+    </ion-item>
+</div>
+  </ion-list>
+
+
+</ion-content>

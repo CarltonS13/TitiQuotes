@@ -29,6 +29,7 @@
         "cordova-android": "^6.2.2",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-add-swift-support": "^1.7.0",
+        "cordova-plugin-app-event": "file:node_modules/cordova-plugin-app-event",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
         "cordova-plugin-ionic": "^1.1.9",
