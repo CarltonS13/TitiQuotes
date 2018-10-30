@@ -1,8 +1,8 @@
 {
   "name": "titiQuotes",
-  "app_id": "e667d068",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "pro_id": "e667d068"
 }
